@@ -2,19 +2,19 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Embed n8n</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Comunidade Dark Dollar</title>
   <style>
-    /* Container responsivo para iframe */
-    .embed-container {
-      position: relative;
-      width: 100%;
-      /* proporção 16:9 – ajuste o padding-bottom para mudar proporção */
-      padding-bottom: 56.25%;
-      height: 0;
+    /* remove margens, rolagem e força 100% de altura */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
       overflow: hidden;
+      background: #000; /* pra não ficar branco atrás do iframe */
     }
-    .embed-container iframe {
+    /* iframe ocupando tudo */
+    iframe {
       position: absolute;
       top: 0; left: 0;
       width: 100%;
@@ -24,16 +24,10 @@
   </style>
 </head>
 <body>
-
-  <h1>Minha Dashboard n8n</h1>
-
-  <div class="embed-container">
-    <iframe
-      src="https://n8n-2025n8n.wjemh8.easypanel.host/webhook/index"
-      title="Configurar n8n"
-      allowfullscreen
-    ></iframe>
-  </div>
-
+  <iframe
+    src="https://n8n-2025n8n.wjemh8.easypanel.host/webhook/index"
+    title="Configurar n8n"
+    allowfullscreen
+  ></iframe>
 </body>
 </html>
